@@ -4,6 +4,7 @@ import  Home  from './pages/Home/Home'
 import Error from './pages/Error/Error'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import "./App.css"
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <li><NavLink to="/propos">A propos</NavLink></li>
       </ul>
     </nav> */}
+    <div className='contentWrapper'>
     <Header/>
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -24,6 +26,7 @@ export default function App() {
     </Routes>
     {/* <div>Mon Footer</div> */}
     <Footer/>
+    </div>
     </>
   )
 }
