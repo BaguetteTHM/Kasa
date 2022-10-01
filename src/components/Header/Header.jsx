@@ -1,7 +1,13 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <nav>
+      <ul>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/propos">A propos</NavLink></li>
+      </ul>
+    </nav>
   )
 }
