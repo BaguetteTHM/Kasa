@@ -10,8 +10,8 @@ export default function Header() {
         <img src={LOGO} alt="Kasa logo"className='header__logo' />
         <nav> 
            <ul>
-                <li><NavLink to="/">Accueil</NavLink></li>
-                <li><NavLink to="/propos">A Propos</NavLink></li>
+                <li><NavLink end to="/">Accueil</NavLink></li>
+                <li><NavLink end to="/propos">A Propos</NavLink></li>
             </ul>
         </nav>
     </header>
