@@ -9,6 +9,7 @@ export default function Home() {
     <>
     <div className='banner__container'>
         <img src={bannerImage} alt="home banner" className='home__banner'/>
+        <span className='banner__text'>Chez vous, partout et ailleurs</span>
     </div>
     <div className='card__background' >
       <div className='card__container'>

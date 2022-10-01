@@ -2,16 +2,31 @@
     display: flex;
     justify-content: center;
     margin: 63px 100px 43px 100px;
-    border-radius: 10px;
-    background-color: black;
-    mix-blend-mode: darken;
+    border-radius: 25px;
+    position: relative;
 }
 
 
 .home__banner{
     height: 223px;
     object-fit:contain;
+    border-radius: 25px;
+    filter: brightness(60%);
     
+}
+
+.banner__text{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+
 }
 
 .card__background{

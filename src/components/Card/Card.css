@@ -3,10 +3,21 @@
     width: 340px;
     border-radius: 10px;
     margin-bottom: 50px;
+    position: relative;
 }
 .card__cover{
     height: 100%;
     width: 100%;
     object-fit: cover;
     background-clip: border-box;
+    filter: brightness(60%);
+    border-radius: 10px;
+}
+.card__title{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position:absolute;
+    bottom:10% ;
+    left: 5%;
 }

@@ -5,7 +5,7 @@ export default function Card({logement}) {
   return (
     <div className='card'>
         <img src={logement.cover} alt="card cover" className='card__cover'></img>
-        
+        <span className='card__title'>{logement.title}</span>
     </div>
   )
 }
