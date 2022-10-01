@@ -1,0 +1,12 @@
+.card{
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.card__cover{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-clip: border-box;
+}
