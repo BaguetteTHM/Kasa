@@ -12,8 +12,7 @@ export default function Logement() {
   const idParams = useParams()
   const ceLogement = Logements.filter(logement => logement.id === idParams.id)
   const logementObject = ceLogement[0]
-  console.log(logementObject.host.name)
-
+  console.log(logementObject.tags)
   return (
     <div className='logement__wrapper'>
       <img src={dummy} alt="a dummy" />

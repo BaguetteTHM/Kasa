@@ -1,11 +1,10 @@
 import React from 'react'
 import "./Tags.css"
 
-export default function Tags({t}) {
-    console.log({t})
+export default function Tags({tag}) {
   return (
     <div className='tags'>
-        <span className='tags__text'>{t}</span>
+        <span className='tags__text'>{tag}</span>
     </div>
   )
 }
