@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import './Dropdown.css'
 
-export default function Dropdown() {
+export default function Dropdown({guideline}) {
 
   const [isOpen,setOpen]= useState(false)
   const drop = () =>{
@@ -12,7 +12,7 @@ export default function Dropdown() {
   return (
     <div className='dropdown'>
       <div className='dropdown__button'>
-        <span className='dropdown__button__title'>Fiabilité</span>
+        <span className='dropdown__button__title'>{guideline.title}</span>
         <span className='dropdown__button__icon'onClick={drop}>{!isOpen ?<svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.66344 0.85955L0.530518 3.00468L12.4604 14.9234L24.3903 2.99263L22.2574 0.85955L12.4604 10.6572L2.66344 0.85955Z" fill="white"/>
         </svg>
@@ -21,8 +21,7 @@ export default function Dropdown() {
       </div>
       {isOpen && 
       <div className='dropdown__body'>
-        <p className='dropdown__body__text'>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire 
-          ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+        <p className='dropdown__body__text'>{guideline.description}</p>
       </div>}
     </div>
   )
