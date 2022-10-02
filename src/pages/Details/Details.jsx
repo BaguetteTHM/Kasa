@@ -1,7 +1,18 @@
 import React from 'react'
+import detailBannerImage from '../../assets/detailBannerImage.png'
+import Dropdown from '../../components/Dropdown/Dropdown'
 
 export default function Details() {
   return (
-    <div>A-Propos</div>
+    <>
+    <div className='banner__container'>
+        <img src={detailBannerImage} alt="home banner" className='home__banner'/>
+    </div>
+    <div className='dropdown__wrapper'>
+      <Dropdown/>
+      
+
+    </div>
+    </>
   )
 }
