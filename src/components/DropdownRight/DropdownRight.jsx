@@ -3,7 +3,7 @@ import "./DropdownRight.css"
 
 import { useState } from 'react'
 
-export default function DropdownRight() {
+export default function DropdownRight({equipments}) {
 
     const [isOpen,setOpen]= useState(false)
     const drop = () =>{
@@ -23,13 +23,10 @@ export default function DropdownRight() {
       {isOpen && 
       <div className='dropdownright__body'>
         <div className='dropdownright__body__text'>
-            <span>Climatisation</span>
-            <span>Wi-Fi</span>
-            <span>Cuisine</span>
-            <span>Espace de travail</span>
-            <span>Fer à repasser</span>
-            <span>Sèche-cheveux</span>
-            <span>Cintres</span>
+            {equipments.map((e,index)=>(
+              <span key={index}>{e}</span>
+            ))
+            }
         </div>
       </div>}
     </div>
