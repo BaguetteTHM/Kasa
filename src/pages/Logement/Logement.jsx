@@ -3,26 +3,42 @@ import { useParams } from 'react-router-dom'
 import { Logements } from '../../logements'
 import dummy from '../../assets/dummybanner.png'
 import "./Logement.css"
+import Tags from '../../components/Tags/Tags'
 
 export default function Logement() {
-  // const characters = [
-  //   { name: 'Batman', team: 'Justice League' },
-  //   { name: 'Hulk', team: 'Avengers' },
-  //   { name: 'Flash', team: 'Justice League' },
-  //   { name: 'Iron Man', team: 'Avengers' },
-  //   { name: 'Deadpool', team: 'X-Force' }
-  // ];
-  // const avengers = characters.filter(character => character.team === 'Avengers');
-  // console.log(avengers)
 
   const idParams = useParams()
   const ceLogement = Logements.filter(logement => logement.id === idParams.id)
-  console.log(ceLogement[0])
+  const logementObject = ceLogement[0]
+  console.log(logementObject.host.name)
 
   return (
-    <div>
+    <div className='logement__wrapper'>
       <img src={dummy} alt="a dummy" />
-      <div></div>
+      <div className='logement__body'>
+        <div>
+          <h1 className='logement__body__title'>{logementObject.title}</h1>
+          <p className='logement__body__location'>{logementObject.location}</p>
+          <div className='tags__container'>
+            {logementObject.tags.map((t) => (
+            <Tags key={t} tag={t}/>))}
+          </div>
+          
+
+        </div>
+        <div className='logement__body__info'>
+          <div className='logement__body__info__ratings'>
+            <div className='host__container'><p className='host__text'>{logementObject.host.name}</p></div>
+            <img className='host__img' src={logementObject.host.picture} alt="your host"/>
+
+          </div>
+          <div>
+            <span>{logementObject.rating}</span>
+          </div>
+
+        </div>
+
+      </div>
       <div>
         <div></div>
         <div></div>

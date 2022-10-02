@@ -1,0 +1,15 @@
+.tags{
+    width: 115px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF6060;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.tags__text{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
