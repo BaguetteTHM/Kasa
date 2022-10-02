@@ -1,6 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Logements } from '../../logements'
+import dummy from '../../assets/dummybanner.png'
+import "./Logement.css"
 
 export default function Logement() {
   // const characters = [
@@ -15,9 +17,17 @@ export default function Logement() {
 
   const idParams = useParams()
   const ceLogement = Logements.filter(logement => logement.id === idParams.id)
-  console.log(ceLogement)
+  console.log(ceLogement[0])
 
   return (
-    <span>Ici s'affichera la page de ce logement : {ceLogement.title}</span>
+    <div>
+      <img src={dummy} alt="a dummy" />
+      <div></div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </div>
   )
 }
