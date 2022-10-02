@@ -4,6 +4,8 @@ import { Logements } from '../../logements'
 import dummy from '../../assets/dummybanner.png'
 import "./Logement.css"
 import Tags from '../../components/Tags/Tags'
+import DropdownLeft from '../../components/DropdownLeft/DropdownLeft'
+import DropdownRight from '../../components/DropdownRight/DropdownRight'
 
 export default function Logement() {
 
@@ -39,9 +41,9 @@ export default function Logement() {
         </div>
 
       </div>
-      <div>
-        <div></div>
-        <div></div>
+      <div className='dropdown__container'>
+        <DropdownLeft/>
+        <DropdownRight/>
       </div>
 
     </div>
