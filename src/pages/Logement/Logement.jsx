@@ -1,21 +1,21 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Logements } from '../../logements'
-import dummy from '../../assets/dummybanner.png'
 import "./Logement.css"
 import Tags from '../../components/Tags/Tags'
 import DropdownLeft from '../../components/DropdownLeft/DropdownLeft'
 import DropdownRight from '../../components/DropdownRight/DropdownRight'
+import Slideshow from '../../components/Slideshow/Slideshow'
 
 export default function Logement() {
 
   const idParams = useParams()
   const ceLogement = Logements.filter(logement => logement.id === idParams.id)
   const logementObject = ceLogement[0]
-  console.log(logementObject.tags)
+  console.log(logementObject.pictures)
   return (
     <div className='logement__wrapper'>
-      <img src={dummy} alt="a dummy" />
+      <Slideshow slides={logementObject.pictures}/>
       <div className='logement__body'>
         <div>
           <h1 className='logement__body__title'>{logementObject.title}</h1>
@@ -41,8 +41,8 @@ export default function Logement() {
 
       </div>
       <div className='dropdown__container'>
-        <DropdownLeft/>
-        <DropdownRight/>
+        <DropdownLeft description={logementObject.description}/>
+        <DropdownRight equipments={logementObject.equipments}/>
       </div>
 
     </div>
