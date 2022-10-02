@@ -2,7 +2,7 @@ import React from 'react'
 import "./DropdownLeft.css"
 import { useState } from 'react'
 
-export default function DropdownLeft() {
+export default function DropdownLeft({description}) {
 
     const [isOpen,setOpen]= useState(false)
     const drop = () =>{
@@ -21,8 +21,7 @@ export default function DropdownLeft() {
       </div>
       {isOpen && 
       <div className='dropdownleft__body'>
-        <p className='dropdownleft__body__text'>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire 
-          ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+        <p className='dropdownleft__body__text'>{description}</p>
       </div>}
     </div>
   )
