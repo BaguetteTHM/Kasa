@@ -15,14 +15,14 @@
 .leftarrow{
     position: absolute;
     left: 2%;
-    top: 45%;
+    top: 40%;
     cursor: pointer;
 }
 
 .rightarrow{
     position: absolute;
     right: 2%;
-    top: 45%;
+    top: 40%;
     cursor: pointer;
 
 }
