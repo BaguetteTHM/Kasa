@@ -6,6 +6,8 @@ import Tags from '../../components/Tags/Tags'
 import DropdownLeft from '../../components/DropdownLeft/DropdownLeft'
 import DropdownRight from '../../components/DropdownRight/DropdownRight'
 import Slideshow from '../../components/Slideshow/Slideshow'
+import {ReactComponent as EmptyStar} from '../../assets/emptyStar.svg'
+import {ReactComponent as FullStar} from '../../assets/fullStar.svg'
 
 export default function Logement() {
 
@@ -34,7 +36,11 @@ export default function Logement() {
 
           </div>
           <div>
-            <span>{logementObject.rating}</span>
+            {logementObject.rating >= 1 ? <FullStar/> : <EmptyStar/>}
+            {logementObject.rating >= 2 ? <FullStar/> : <EmptyStar/>}
+            {logementObject.rating >= 3 ? <FullStar/> : <EmptyStar/>}
+            {logementObject.rating >= 4 ? <FullStar/> : <EmptyStar/>}
+            {logementObject.rating >= 5 ? <FullStar/> : <EmptyStar/>}
           </div>
 
         </div>
