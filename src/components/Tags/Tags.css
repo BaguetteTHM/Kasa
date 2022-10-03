@@ -1,5 +1,5 @@
 .tags{
-    width: 115px;
+    min-width: 115px;
     height: 25px;
     display: flex;
     align-items: center;
@@ -12,4 +12,5 @@
     color: white;
     font-weight: 500;
     font-size: 14px;
+    padding: 0 5px 0 5px;
 }

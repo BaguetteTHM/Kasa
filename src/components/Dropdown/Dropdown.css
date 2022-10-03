@@ -1,6 +1,7 @@
 .dropdown{
     width: 1023px;
     margin-bottom: 31px;
+    position: relative;
 }
 
 
@@ -15,6 +16,8 @@
     border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
+    
 
 }
 .dropdown__button__title{
@@ -29,6 +32,7 @@
 .dropdown__body{
     background-color: #F6F6F6 ;
     border-radius: 5px;
+    margin-top: -40px;
 }
 .dropdown__body__text{
     font-weight: 400;
