@@ -1,3 +1,38 @@
 .slideshow{
-    width: 100%;
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
 }
+
+.slideshow__img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 25px;
+}
+
+.leftarrow{
+    position: absolute;
+    left: 2%;
+    top: 45%;
+    cursor: pointer;
+}
+
+.rightarrow{
+    position: absolute;
+    right: 2%;
+    top: 45%;
+    cursor: pointer;
+
+}
+
+.bullet{
+    position: absolute;
+    right: 50%;
+    bottom: 0%;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+

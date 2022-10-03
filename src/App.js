@@ -1,4 +1,4 @@
-import { Link, Route, Routes,NavLink } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Details from './pages/Details/Details'
 import  Home  from './pages/Home/Home'
 import Error from './pages/Error/Error'
@@ -11,12 +11,6 @@ import "./App.css"
 export default function App() {
   return (
     <>
-    {/* <nav>
-      <ul>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/propos">A propos</NavLink></li>
-      </ul>
-    </nav> */}
     <div className='contentWrapper'>
     <Header/>
     <Routes>
@@ -26,7 +20,6 @@ export default function App() {
       <Route path='*' element={<Error/>}/>
 
     </Routes>
-    {/* <div>Mon Footer</div> */}
     <Footer/>
     </div>
     </>
