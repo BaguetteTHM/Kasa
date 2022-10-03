@@ -22,8 +22,8 @@ export default function Logement() {
           <h1 className='logement__body__title'>{logementObject.title}</h1>
           <p className='logement__body__location'>{logementObject.location}</p>
           <div className='tags__container'>
-            {logementObject.tags.map((t) => (
-            <Tags key={t} tag={t}/>))}
+            {logementObject.tags.map((t,index) => (
+            <Tags key={index} tag={t}/>))}
           </div>
           
 

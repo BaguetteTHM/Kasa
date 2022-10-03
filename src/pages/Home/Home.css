@@ -9,7 +9,8 @@
 
 .home__banner{
     height: 223px;
-    object-fit:contain;
+    width: 100%;
+    object-fit:cover;
     border-radius: 25px;
     filter: brightness(60%);
     
@@ -41,4 +42,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+    .home__banner{
+        height: 111px;
+        width: 100%;
+        object-fit:cover;
+        border-radius: 10px;
+        filter: brightness(60%);
+        
+    }
+
+    .banner__text{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 40%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+    
+    }
+
 }
