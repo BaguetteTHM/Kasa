@@ -11,7 +11,6 @@ import IdValidator from './pages/Logement/IdValidator'
 export default function App() {
   return (
     <>
-    <div className='contentWrapper'>
     <Header/>
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -21,7 +20,6 @@ export default function App() {
 
     </Routes>
     <Footer/>
-    </div>
     </>
   )
 }

@@ -1,0 +1,13 @@
+.card__background{
+    margin: 0 100px 50px 100px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+}
+
+.card__container{
+    padding: 56px 50px 56px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
