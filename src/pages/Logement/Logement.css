@@ -36,15 +36,18 @@
 
 .logement__body__info__ratings{
     display: flex;
+    align-items: center;
 }
 .host__container{
     width: 93px;
+    margin-right:10px ;
 }
 
 .host__text{
     font-weight: 500;
     font-size: 18px;
     color: #FF6060;
+    text-align: end;
 
 }
 
