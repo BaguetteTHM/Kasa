@@ -2,12 +2,9 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Logements } from '../../logements'
 import "./Logement.css"
-import Tags from '../../components/Tags/Tags'
 import DropdownLeft from '../../components/DropdownLeft/DropdownLeft'
 import DropdownRight from '../../components/DropdownRight/DropdownRight'
 import Slideshow from '../../components/Slideshow/Slideshow'
-import {ReactComponent as EmptyStar} from '../../assets/emptyStar.svg'
-import {ReactComponent as FullStar} from '../../assets/fullStar.svg'
 import Info from '../../components/Info/Info'
 
 export default function Logement() {
