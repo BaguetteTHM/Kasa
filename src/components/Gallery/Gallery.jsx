@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Gallery.css"
 import Card from '../../components/Card/Card'
-import { Logements } from '../../logements'
+import { Logements } from '../../data/logements'
 
 export default function Gallery() {
   return (

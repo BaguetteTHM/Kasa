@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { Logements } from '../../logements'
+import { Logements } from '../../data/logements'
 import "./Logement.css"
 import DropdownLeft from '../../components/DropdownLeft/DropdownLeft'
 import DropdownRight from '../../components/DropdownRight/DropdownRight'

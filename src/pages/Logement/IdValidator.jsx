@@ -1,5 +1,5 @@
 import React from 'react'
-import { Logements } from '../../logements'
+import { Logements } from '../../data/logements'
 import { useParams } from 'react-router-dom'
 import Logement from './Logement'
 import Error from '../Error/Error'

@@ -24,6 +24,7 @@
 .logement__body__info{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .logement__body__info__ratings{
