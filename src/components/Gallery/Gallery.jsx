@@ -5,13 +5,13 @@ import { Logements } from '../../data/logements'
 
 export default function Gallery() {
   return (
-    <div className='card__background' >
-        <div className='card__container'>
-          {Logements.map((l) => (
-            <Card key= {l.id} logement={l}/>
-          ))}
+    
+    <div className='card__container'>
+      {Logements.map((l) => (
+        <Card key= {l.id} logement={l}/>
+      ))}
 
-        </div>
-      </div>
+    </div>
+     
   )
 }
