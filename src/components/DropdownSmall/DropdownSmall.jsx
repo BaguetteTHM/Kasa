@@ -21,11 +21,15 @@ export default function NewDropdown(props) {
       </div>
       {isOpen && 
       <div className='dropdownsmall__body'>
-        { !props.description.isArray ?
+          {Array.isArray(props.description)?
+        <div className='dropdownsmall__body__text --array'>
+            {props.description.map((e,index)=>(
+              <span key={index}>{e}</span>
+            ))
+            }
+        </div>:
         <p className='dropdownsmall__body__text'>{props.description}</p>
-        :props.description.map((e,index)=>(
-          <span key={index}>{e}</span>
-        ))}
+        }   
       </div>}
     </div>
   )
