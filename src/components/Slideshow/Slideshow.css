@@ -1,6 +1,6 @@
 .slideshow{
     position: relative;
-    width: 1240px;
+    width: 100%;
     height: 415px;
     border-radius: 25px;
 }
@@ -29,10 +29,27 @@
 
 .bullet{
     position: absolute;
-    right: 50%;
+    right: 48%;
     bottom: 0%;
     font-weight: 500;
     font-size: 18px;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .slideshow{
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .leftarrow{
+    height: 20px;
+    width: 12px;
+    }
+    
+    .rightarrow{
+    
+    
+    }
 }
 

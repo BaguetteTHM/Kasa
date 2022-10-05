@@ -46,3 +46,25 @@
     flex-direction: column;
     padding: 35px 20px 20px 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .dropdownsmall{
+        width: 335px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .dropdownsmall__button{
+    
+        height: 30px;
+    }
+    .dropdownsmall__button__title{
+        font-weight: 500;
+        font-size: 13px;
+        color: white;
+    
+    }
+    .dropdownsmall__body{
+        border-radius: 5px;
+    }
+
+}

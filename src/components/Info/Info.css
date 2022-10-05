@@ -50,3 +50,46 @@
     border-radius: 50%;
 
 }
+
+@media screen and (max-width: 768px) {
+    .logement__body{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+
+    .logement__body__info{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logement__body__title{
+        font-size: 18px;    
+    }
+    
+    .logement__body__location{
+        font-size: 14px;
+       
+    
+    }
+
+    .host__img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    
+    }
+
+    .host__text{
+        font-weight: 500;
+        font-size: 12px;
+        text-align: end;
+    
+    }
+    
+
+}

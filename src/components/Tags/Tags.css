@@ -14,3 +14,17 @@
     font-size: 14px;
     padding: 0 5px 0 5px;
 }
+@media screen and (max-width: 768px) {
+    .tags{
+        min-width: 84px;
+        height: 18px;
+        border-radius: 5px;
+        
+    }
+    .tags__text{
+        font-size: 10px;
+        padding: 0 5px 0 5px;
+    }
+    
+
+}
