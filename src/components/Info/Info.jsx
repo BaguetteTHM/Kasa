@@ -1,6 +1,6 @@
 import React from 'react'
-import {ReactComponent as EmptyStar} from '../../assets/emptyStar.svg'
-import {ReactComponent as FullStar} from '../../assets/fullStar.svg'
+import EmptyStar from '../../assets/emptyStar.png'
+import FullStar from '../../assets/fullStar.png'
 import Tags from '../Tags/Tags'
 import "./Info.css"
 
@@ -24,11 +24,21 @@ export default function Info({logementObject}) {
 
       </div>
       <div>
-        {logementObject.rating >= 1 ? <FullStar/> : <EmptyStar/>}
-        {logementObject.rating >= 2 ? <FullStar/> : <EmptyStar/>}
-        {logementObject.rating >= 3 ? <FullStar/> : <EmptyStar/>}
-        {logementObject.rating >= 4 ? <FullStar/> : <EmptyStar/>}
-        {logementObject.rating >= 5 ? <FullStar/> : <EmptyStar/>}
+        {logementObject.rating >= 1 ? 
+        <img src={FullStar} alt='full star rating' className='stars'/>
+        : <img src={EmptyStar} alt='empty star rating'className='stars'/>}
+        {logementObject.rating >= 2 ? 
+        <img src={FullStar} alt='full star rating'className='stars'/>
+        : <img src={EmptyStar} alt='empty star rating'className='stars'/>}
+        {logementObject.rating >= 3 ? 
+        <img src={FullStar} alt='full star rating'className='stars'/>
+        : <img src={EmptyStar} alt='empty star rating'className='stars'/>}
+        {logementObject.rating >= 4 ? 
+        <img src={FullStar} alt='full star rating'className='stars'/>
+        : <img src={EmptyStar} alt='empty star rating'className='stars'/>}
+        {logementObject.rating >= 5 ? 
+        <img src={FullStar} alt='full star rating'className='stars'/>
+        : <img src={EmptyStar} alt='empty star rating'className='stars'/>}
       </div>
 
     </div>

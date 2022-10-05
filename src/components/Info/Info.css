@@ -90,6 +90,10 @@
         text-align: end;
     
     }
+    .stars{
+        height: 15px;
+        width: 15px;
+    }
     
 
 }
