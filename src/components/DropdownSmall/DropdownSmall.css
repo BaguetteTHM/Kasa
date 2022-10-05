@@ -70,5 +70,9 @@
     .dropdownsmall__body__text{
         font-size: 12px; 
     }
+    .dropdownsmall__button__icon img{
+        height: 9px;
+        width: 15px;
+    }
 
 }
