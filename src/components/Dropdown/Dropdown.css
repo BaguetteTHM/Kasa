@@ -41,3 +41,32 @@
     padding: 35px 20px 20px 20px;
 
 }
+
+@media screen and (max-width: 992px) {
+    .dropdown{
+        width: 600px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown{
+        width: 335px;
+        margin-bottom: 20px;
+    }
+    .dropdown__button{
+    
+        height: 30px;
+    }
+
+    .dropdown__button__title{
+        font-size: 12px;
+    
+    }
+    
+
+}
+
+
+
+
