@@ -32,7 +32,7 @@
 .dropdownsmall__body{
     background-color: #F6F6F6 ;
     border-radius: 10px;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 .dropdownsmall__body__text{
     font-weight: 400;
@@ -66,6 +66,9 @@
     }
     .dropdownsmall__body{
         border-radius: 5px;
+    }
+    .dropdownsmall__body__text{
+        font-size: 12px; 
     }
 
 }
