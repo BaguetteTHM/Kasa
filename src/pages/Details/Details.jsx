@@ -11,7 +11,7 @@ export default function Details() {
     <Banner bannerImage={detailBannerImage}/>
     <div className='dropdown__wrapper'>
       {guidelines.map((g) => (
-        <NewDropdown key={g.id} title={g.title} description={g.description}/>
+        <NewDropdown key={g.id} title={g.title} description={g.description} modifier=''/>
       ))}
     </div>
     </>

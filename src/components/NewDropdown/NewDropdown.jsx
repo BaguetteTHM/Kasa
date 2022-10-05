@@ -10,7 +10,7 @@ export default function NewDropdown(props) {
     }
 
   return (
-    <div className='dropdown'>
+    <div className={`dropdown ${props.modifier}`}>
       <div className='dropdown__button'>
         <span className='dropdown__button__title'>{props.title}</span>
         <span className='dropdown__button__icon'onClick={drop}>{!isOpen ?<svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
