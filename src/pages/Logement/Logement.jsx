@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Logements } from '../../data/logements'
 import "./Logement.css"
-import DropdownLeft from '../../components/DropdownLeft/DropdownLeft'
+import DropdownSmall from '../../components/DropdownSmall/DropdownSmall'
 import DropdownRight from '../../components/DropdownRight/DropdownRight'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Info from '../../components/Info/Info'
@@ -17,8 +17,8 @@ export default function Logement() {
       <Slideshow slides={logementObject.pictures}/>
       <Info logementObject={logementObject}/>
       <div className='dropdown__container'>
-        <DropdownLeft description={logementObject.description}/>
-        <DropdownRight equipments={logementObject.equipments}/>
+        <DropdownSmall title='Description' description={logementObject.description}/>
+        <DropdownSmall title='Équipements' description={logementObject.equipments}/>
       </div>
 
     </div>

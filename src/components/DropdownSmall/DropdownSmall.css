@@ -1,4 +1,4 @@
-.dropdownleft{
+.dropdownsmall{
     width: 582px;
     margin-top: 31px;
     margin-bottom: 31px;
@@ -6,7 +6,7 @@
 
 
 
-.dropdownleft__button{
+.dropdownsmall__button{
     
     height: 52px;
     background-color:#FF6060 ;
@@ -19,21 +19,21 @@
     position: relative;
 
 }
-.dropdownleft__button__title{
+.dropdownsmall__button__title{
     font-weight: 500;
     font-size: 18px;
     color: white;
 
 }
-.dropdownleft__button__icon{
+.dropdownsmall__button__icon{
     cursor: pointer;
 }
-.dropdownleft__body{
+.dropdownsmall__body{
     background-color: #F6F6F6 ;
     border-radius: 10px;
     margin-top: -30px;
 }
-.dropdownleft__body__text{
+.dropdownsmall__body__text{
     font-weight: 400;
     font-size: 18px;
     color: #FF6060;
