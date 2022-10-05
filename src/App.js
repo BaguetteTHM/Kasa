@@ -11,15 +11,19 @@ import IdValidator from './pages/Logement/IdValidator'
 export default function App() {
   return (
     <>
-    <Header/>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/propos'element={<Details/>}/>
-      <Route path='/:id'element={<IdValidator/>}/>
-      <Route path='*' element={<Error/>}/>
+    <div className='pageWrapper'>
+      <Header/>
+      <div className='contentWrapper'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/propos'element={<Details/>}/>
+          <Route path='/:id'element={<IdValidator/>}/>
+          <Route path='*' element={<Error/>}/>
 
-    </Routes>
-    <Footer/>
+        </Routes>
+      </div>
+      <Footer/>
+    </div>
     </>
   )
 }
