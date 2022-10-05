@@ -12,7 +12,6 @@ export default function Router() {
         <Route path='/propos'element={<Details/>}/>
         <Route path='/:id'element={<IdValidator/>}/>
         <Route path='*' element={<Error/>}/>
-
     </Routes>
   )
 }

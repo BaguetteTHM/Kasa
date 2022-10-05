@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Router
+La logique router se trouve dans le fichier Router.jsx. Un composant idValidator vérifie l'intégrité des id logement avant le render de la page logement par mesure de sécurité
+
 ## Available Scripts
 
 In the project directory, you can run:
