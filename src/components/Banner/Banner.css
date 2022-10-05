@@ -16,13 +16,11 @@
     
 }
 
+
+
 .banner__text{
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     top: 40%;
-    left: 0;
-    right: 0;
     text-align: center;
     font-size: 48px;
     color: white;
@@ -33,6 +31,23 @@
 @media screen and (max-width: 992px) {
     .banner__container{
         margin: 20px 20px 6px 20px;
+    }
+    .home__banner--home{
+        height: 111px;
+    }
+    .banner__text{
+       font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__text{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        text-align: start;
+        height: 48px;  
+        width: 217px;
     }
 
 }

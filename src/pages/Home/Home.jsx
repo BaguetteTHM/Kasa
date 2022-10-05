@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
     <div className='home__body'>
-      <Banner bannerImage={bannerImage} text="Chez vous, partout et ailleurs"/>
+      <Banner bannerImage={bannerImage} text="Chez vous, partout et ailleurs" modifier="--home"/>
       <Gallery/>
     </div>
     </>
