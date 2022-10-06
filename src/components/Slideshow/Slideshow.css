@@ -51,5 +51,8 @@
         height: 20px;
         width: 12px;
     }
+    .bullet{
+        display: none;
+    }
 }
 
