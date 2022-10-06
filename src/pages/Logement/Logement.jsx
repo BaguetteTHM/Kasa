@@ -2,7 +2,7 @@ import React from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { Logements } from '../../data/logements'
 import "./Logement.css"
-import DropdownSmall from '../../components/DropdownSmall/DropdownSmall'
+import Dropdown from '../../components/Dropdown/Dropdown'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Info from '../../components/Info/Info'
 
@@ -19,7 +19,7 @@ export default function Logement() {
       <Info logementObject={logementObject}/>
       <div className='dropdown__container'>
 
-        <DropdownSmall title='Description' modifier="--small">
+        <Dropdown title='Description' modifier="--small">
         {Array.isArray(logementObject.description)?
         <div className={`dropdown__body__text--array`}>
             {logementObject.description.map((e,index)=>(
@@ -29,10 +29,10 @@ export default function Logement() {
         </div>:
         <p className={`dropdown__body__text--small`}>{logementObject.description}</p>
         }
-        </DropdownSmall>
-        <DropdownSmall title='Équipements' description={logementObject.description} modifier="--small">
+        </Dropdown>
+        <Dropdown title='Équipements' description={logementObject.description} modifier="--small">
         {Array.isArray(logementObject.equipments)?
-        <div className={`dropdown__body__text--small --array`}>
+        <div className={`dropdown__body__text--small dropdown__body__text--small--array`}>
             {logementObject.equipments.map((e,index)=>(
               <span key={index}>{e}</span>
             ))
@@ -40,7 +40,7 @@ export default function Logement() {
         </div>:
         <p className={`dropdown__body__text--small`}>{logementObject.equipments}</p>
         }
-        </DropdownSmall>
+        </Dropdown>
       </div>
 
     </div>
