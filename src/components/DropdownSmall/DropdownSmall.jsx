@@ -12,24 +12,16 @@ export default function NewDropdown(props) {
     }
 
   return (
-    <div className={'dropdownsmall'}>
-      <div className='dropdownsmall__button'>
-        <span className='dropdownsmall__button__title'>{props.title}</span>
-        <span className='dropdownsmall__button__icon'onClick={drop}>{!isOpen ?<img src={arrowDown} alt="arrow down icon to drop" />
+    <div className={`dropdown${props.modifier}`}>
+      <div className={`dropdown__button${props.modifier}`}>
+        <span className={`dropdown__button__title${props.modifier}`}>{props.title}</span>
+        <span className={`dropdown__button__icon${props.modifier}`}onClick={drop}>{!isOpen ?<img src={arrowDown} alt="arrow down icon to drop" />
         : <img src={arrowUp} alt="arrow up icon to close dropdown" />
         }</span>
       </div>
       {isOpen && 
-      <div className='dropdownsmall__body'>
-          {Array.isArray(props.description)?
-        <div className='dropdownsmall__body__text --array'>
-            {props.description.map((e,index)=>(
-              <span key={index}>{e}</span>
-            ))
-            }
-        </div>:
-        <p className='dropdownsmall__body__text'>{props.description}</p>
-        }   
+      <div className={`dropdown__body${props.modifier}`}>
+          {props.children}   
       </div>}
     </div>
   )

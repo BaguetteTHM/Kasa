@@ -18,8 +18,29 @@ export default function Logement() {
       <Slideshow slides={logementObject.pictures}/>
       <Info logementObject={logementObject}/>
       <div className='dropdown__container'>
-        <DropdownSmall title='Description' description={logementObject.description}/>
-        <DropdownSmall title='Équipements' description={logementObject.equipments}/>
+
+        <DropdownSmall title='Description' modifier="--small">
+        {Array.isArray(logementObject.description)?
+        <div className={`dropdown__body__text--array`}>
+            {logementObject.description.map((e,index)=>(
+              <span key={index}>{e}</span>
+            ))
+            }
+        </div>:
+        <p className={`dropdown__body__text--small`}>{logementObject.description}</p>
+        }
+        </DropdownSmall>
+        <DropdownSmall title='Équipements' description={logementObject.description} modifier="--small">
+        {Array.isArray(logementObject.equipments)?
+        <div className={`dropdown__body__text--small --array`}>
+            {logementObject.equipments.map((e,index)=>(
+              <span key={index}>{e}</span>
+            ))
+            }
+        </div>:
+        <p className={`dropdown__body__text--small`}>{logementObject.equipments}</p>
+        }
+        </DropdownSmall>
       </div>
 
     </div>

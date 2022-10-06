@@ -1,4 +1,51 @@
-.dropdownsmall{
+.dropdown{
+    width: 1023px;
+    margin-bottom: 31px;
+    position: relative;
+}
+
+
+
+.dropdown__button{
+    
+    height: 47px;
+    background-color:#FF6060 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    
+
+}
+.dropdown__button__title{
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+
+}
+.dropdown__button__icon{
+    cursor: pointer;
+}
+.dropdown__body{
+    background-color: #F6F6F6 ;
+    border-radius: 5px;
+    margin-top: -40px;
+}
+.dropdown__body__text{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FF6060;
+    padding: 35px 20px 20px 20px;
+
+}
+
+
+
+
+.dropdown--small{
     width: 582px;
     margin-top: 31px;
     margin-bottom: 31px;
@@ -7,7 +54,7 @@
 
 
 
-.dropdownsmall__button{
+.dropdown__button--small{
     
     height: 52px;
     background-color:#FF6060 ;
@@ -20,21 +67,21 @@
     position: relative;
 
 }
-.dropdownsmall__button__title{
+.dropdown__button__title--small{
     font-weight: 500;
     font-size: 18px;
     color: white;
 
 }
-.dropdownsmall__button__icon{
+.dropdown__button__icon--small{
     cursor: pointer;
 }
-.dropdownsmall__body{
+.dropdown__body--small{
     background-color: #F6F6F6 ;
     border-radius: 10px;
     margin-top: -20px;
 }
-.dropdownsmall__body__text{
+.dropdown__body__text--small{
     font-weight: 400;
     font-size: 18px;
     color: #FF6060;
@@ -47,30 +94,58 @@
     flex-direction: column;
     padding: 35px 20px 20px 20px;
 }
+@media screen and (max-width: 992px) {
+    .dropdown{
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .dropdown__button__title{
+        font-size: 18px;
+    
+    }
+    
+}
 
 @media screen and (max-width: 768px) {
-    .dropdownsmall{
+    .dropdown--small{
         width: 335px;
         margin-top: 0;
         margin-bottom: 20px;
     }
-    .dropdownsmall__button{
+    .dropdown__button--small{
     
         height: 30px;
     }
-    .dropdownsmall__button__title{
+    .dropdown__button__title--small{
         font-weight: 500;
         font-size: 13px;
         color: white;
     
     }
-    .dropdownsmall__body{
+    .dropdown__body--small{
         border-radius: 5px;
     }
-    .dropdownsmall__body__text{
+    .dropdown__body__text--small{
         font-size: 12px; 
     }
-    .dropdownsmall__button__icon img{
+    .dropdown__button__icon--small img{
+        height: 9px;
+        width: 15px;
+    }
+    .dropdown__button{
+    
+        height: 30px;
+    }
+
+    .dropdown__button__title{
+        font-size: 12px;
+    
+    }
+    .dropdown__body__text{
+          font-size: 12px;
+    
+    }
+    .dropdown__button__icon img{
         height: 9px;
         width: 15px;
     }
