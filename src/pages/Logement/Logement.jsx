@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import { Logements } from '../../data/logements'
 import "./Logement.css"
 import DropdownSmall from '../../components/DropdownSmall/DropdownSmall'
@@ -10,7 +10,9 @@ export default function Logement() {
 
   const idParams = useParams()
   const ceLogement = Logements.filter(logement => logement.id === idParams.id)
+  
   const logementObject = ceLogement[0]
+  if(ceLogement.length>0){
   return (
     <div className='logement__wrapper'>
       <Slideshow slides={logementObject.pictures}/>
@@ -21,5 +23,7 @@ export default function Logement() {
       </div>
 
     </div>
-  )
+  )}else{
+    return <Navigate to={"*"} replace={true}/>}
+  
 }
