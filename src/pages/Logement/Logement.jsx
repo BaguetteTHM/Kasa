@@ -3,6 +3,7 @@ import { Navigate, useParams } from 'react-router-dom'
 import { Logements } from '../../data/logements'
 import "./Logement.css"
 import Dropdown from '../../components/Dropdown/Dropdown'
+import'../../components/Dropdown/Dropdown.css'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Info from '../../components/Info/Info'
 

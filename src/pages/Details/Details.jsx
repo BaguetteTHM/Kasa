@@ -1,6 +1,7 @@
 import React from 'react'
 import detailBannerImage from '../../assets/detailBannerImage.png'
 import Dropdown from '../../components/Dropdown/Dropdown'
+import'../../components/Dropdown/Dropdown.css'
 import './Details.css'
 import { guidelines } from '../../data/guidelines'
 import Banner from '../../components/Banner/Banner'
