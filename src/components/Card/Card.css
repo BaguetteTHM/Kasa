@@ -2,7 +2,6 @@
     height: 340px;
     width: 340px;
     border-radius: 10px;
-    margin-bottom: 50px;
     position: relative;
 }
 .card__cover{
@@ -22,13 +21,10 @@
     left: 5%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .card{
         height: 255px;
         width: 335px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        position: relative;
     }
 
 
