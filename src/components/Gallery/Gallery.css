@@ -10,7 +10,16 @@
     height: 829px;
     overflow:scroll;
     overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
 }
+
+.card__container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 
 @media screen and (max-width: 992px) {
     .card__container{
